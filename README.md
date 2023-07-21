@@ -63,5 +63,5 @@ test_gt: Normal-flux sparse-view CT reconstruction images for test
 
 ![Noisy Image](repo-image/Example.png)
 # Reference
-    The tensorflow implementation, [https://github.com/lzhengchun/TomoGAN]https://github.com/lzhengchun/TomoGAN
+    The tensorflow implementation, [https://github.com/lzhengchun/TomoGAN](https://github.com/lzhengchun/TomoGAN)
 
