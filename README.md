@@ -34,5 +34,5 @@ Paper: to be published
 
 
 # Reference
-    The tensorflow implementation of Unet, [https://github.com/lzhengchun/TomoGAN]https://github.com/lzhengchun/TomoGAN
+    The tensorflow implementation, [https://github.com/lzhengchun/TomoGAN]https://github.com/lzhengchun/TomoGAN
 
