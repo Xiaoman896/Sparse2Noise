@@ -8,7 +8,7 @@ import tifffile
 
 parser = argparse.ArgumentParser(description='S2N, for noise/artifact removal of SRCT')
 parser.add_argument('-gpus',  type=str, default="0", help='list of visiable GPUs')
-parser.add_argument('-expName', type=str, default='tomogan', help='Experiment name')
+parser.add_argument('-expName', type=str, default='S2N', help='Experiment name')
 parser.add_argument('-lmse',  type=float, default=1, help='lambda mse')
 parser.add_argument('-lssim',  type=float, default=20, help='lambda ssim')
 parser.add_argument('-lunet', type=int, default=4, help='Unet layers')
