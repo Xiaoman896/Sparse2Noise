@@ -24,6 +24,7 @@ Paper: to be published
           or pip install numpy tensorflow imageio scipy tifffile
   ```
 ## Dataset (h5):
+Test data 241train-scaffolds-sparse2noise.h5 can be downloaded from [here](https://drive.google.com/drive/folders/1sTI0Lv8VJzcGcavJ6NhfaorBv5ZLYfZj): 
   ```
   h5dump -H 241train-scaffolds-sparse2noise.h5
   HDF5 "241train-scaffolds-sparse2noise.h5" {
