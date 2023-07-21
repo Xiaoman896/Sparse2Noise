@@ -23,7 +23,34 @@ Paper: to be published
      pip install -r requirements.txt
           or pip install numpy tensorflow imageio scipy tifffile
   ```
-
+## Dataset (h5):
+  ```
+  h5dump -H 241train-scaffolds-sparse2noise.h5
+  HDF5 "241train-scaffolds-sparse2noise.h5" {
+  GROUP "/" {
+     DATASET "test_gt" {
+        DATATYPE  H5T_STD_U8LE
+        DATASPACE  SIMPLE { ( 5, 256, 256 ) / ( 5, 256, 256 ) }
+     }
+     DATASET "test_ns" {
+        DATATYPE  H5T_STD_U8LE
+        DATASPACE  SIMPLE { ( 5, 256, 256 ) / ( 5, 256, 256 ) }
+     }
+     DATASET "train_gt" {
+        DATATYPE  H5T_STD_U8LE
+        DATASPACE  SIMPLE { ( 241, 256, 256 ) / ( 241, 256, 256 ) }
+     }
+     DATASET "train_ns" {
+        DATATYPE  H5T_STD_U8LE
+        DATASPACE  SIMPLE { ( 241, 256, 256 ) / ( 241, 256, 256 ) }
+     }
+  }
+  }
+train_ns: Normal-flux sparse-view CT reconstruction images for training
+train_gt: Low-flux full-view CT reconstruction images for training
+test_ns: Normal-flux sparse-view CT reconstruction images for test
+test_gt: Normal-flux sparse-view CT reconstruction images for test
+  ```
 ## Train:
 
 * run main.py, an example:
@@ -31,8 +58,9 @@ Paper: to be published
   python main.py -h5fn 241train-scaffolds-sparse2noise.h5
   ```
   Now you should have a folder /Output/<your dataset's name>
+## Example:
 
-
+![Noisy Image](repo-image/Example.png)
 # Reference
     The tensorflow implementation, [https://github.com/lzhengchun/TomoGAN]https://github.com/lzhengchun/TomoGAN
 
