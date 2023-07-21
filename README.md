@@ -1,6 +1,6 @@
 ![version](https://img.shields.io/badge/Version-v1.0-blue.svg?style=plastic)
 ![tensorflow](https://img.shields.io/badge/TensorFlow-v2.5.0-green.svg?style=plastic)
-![license](https://img.shields.io/badge/license-MIT-red.svg?style=plastic)
+![license](https://img.shields.io/badge/license-CC_BY--NC-red.svg?style=plastic)
 
 # Sparse2Noise
 Low-dose synchrotron X-ray tomography without high-quality reference data
