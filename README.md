@@ -48,9 +48,12 @@ Test data 241train-scaffolds-sparse2noise.h5 can be downloaded from [here](https
   }
   }
  ```
-*train_ns*: ```Normal-flux sparse-view CT reconstruction images for training```
+*train_ns*: Normal-flux sparse-view CT reconstruction images for training
+
 *train_gt*: Low-flux full-view CT reconstruction images for training
+
 _test_ns_: Normal-flux sparse-view CT reconstruction images for test
+
 _test_gt_: Normal-flux sparse-view CT reconstruction images for test
  
 ## Train:
