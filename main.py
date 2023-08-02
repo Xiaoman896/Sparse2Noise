@@ -58,9 +58,9 @@ for epoch in range(args.maxiter+1):
 
             gen_imgs = generator(X_mb, training=True)
             loss_mse = tf.losses.mean_squared_error(gen_imgs, y_mb)
-            loss_l1 = tf.losses.mean_absolute_error(gen_imgs, y_mb)
-            # loss_ssim = (tf.image.ssim(gen_imgs, tf.expand_dims(y_mb, axis=0), max_val=255))
-            gen_loss = loss_l1
+            # loss_l1 = tf.losses.mean_absolute_error(gen_imgs, y_mb)
+            loss_ssim = 1-(tf.image.ssim(gen_imgs, tf.expand_dims(y_mb, axis=0), max_val=255))
+            gen_loss = loss_ssim
             gen_gradients = gen_tape.gradient(gen_loss, generator.trainable_variables)
             gen_optimizer.apply_gradients(zip(gen_gradients, generator.trainable_variables))
     LossG[epoch]=gen_loss.numpy().mean()
